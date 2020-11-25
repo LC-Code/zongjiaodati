@@ -72,7 +72,7 @@ for(let i = 0; i<tr.length; i++){
                 if(jsonObj2[j].name.indexOf(bioati) != -1 ){
                     tr[i].getElementsByTagName("font")[0].innerText =
                         tr[i].getElementsByTagName("font")[0].innerText + "   " +
-                        jsonObj2[j].value + ":old_version   <---->";
+                        jsonObj2[j].value + ":old_version   ";
                     break;
                 }
             }
