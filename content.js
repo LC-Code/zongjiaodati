@@ -68,22 +68,22 @@ for(let i = 0; i<tr.length; i++){
             var a = bioati.split("（ ）");
             // alert(a)
             bioati = a[0].length > a[1].length ? a[0] : a[1];
-            for(let j = 0;j<jsonObj2.length;j++){
+           /* for(let j = 0;j<jsonObj2.length;j++){
                 if(jsonObj2[j].name.indexOf(bioati) != -1 ){
                     tr[i].getElementsByTagName("font")[0].innerText =
                         tr[i].getElementsByTagName("font")[0].innerText + "   " +
                         jsonObj2[j].value + ":old_version   <---->";
                     break;
                 }
-            }
+            }*/
         }
 
         for(let j = 0;j<jsonObj1.length;j++){
             if(jsonObj1[j].id == tr[i].id){
                 console.info(jsonObj1[j].id + '   '+ tr[i].id)
-               tr[i].getElementsByTagName("font")[0].innerText =
+               /*tr[i].getElementsByTagName("font")[0].innerText =
                     tr[i].getElementsByTagName("font")[0].innerText + "   " +
-                    jsonObj1[j].KeyWord + ":new_version";
+                    jsonObj1[j].KeyWord + ":new_version";*/
                 select(inputList,jsonObj1[j].KeyWord );
                 document.getElementById(li_Id).setAttribute("class", "on");
 
